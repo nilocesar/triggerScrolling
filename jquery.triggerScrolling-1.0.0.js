@@ -20,7 +20,7 @@ var triggerScrolling = (function () {
 		options,
 		arr = new Array,
 		settings = {
-			debug: false,
+			debug: true,
 			trigger: {
 				className: '-js-trigger-scrolling-active'
 			},
@@ -84,7 +84,7 @@ var triggerScrolling = (function () {
 			var arrLength = (arr.length),
 				last = (arr.length - 1),
 				first = (arr.length - arr.length),
-				flags, prev, next;
+				flags, prev, prevI, next, nextI;
 
 			for (var i = 0; i < arrLength; i++) {
 				if (scroll >= arr[i].top && scroll <= (arr[i].top + arr[i].height)) {
@@ -96,6 +96,7 @@ var triggerScrolling = (function () {
 						prev.height = null;
 					} else {
 						prev = arr[i - 1];
+						prevI = [i - 1];
 					}
 
 					if (i >= last) {
@@ -106,38 +107,39 @@ var triggerScrolling = (function () {
 						next.height = null;
 					} else {
 						next = arr[i + 1];
+						nextI = [i + 1];
 					}
 
 					arr[i].element.addClass(options.trigger.className);
 
 					flags = {
 						'first': {
-							'identifier': arr[first].identifier,
+							'identifier': (arr[first].identifier != "" ? arr[first].identifier : 'trigger-' + first),
 							'element': arr[first].element,
 							'top': arr[first].top,
 							'height': arr[first].height
 						},
 						'last': {
-							'identifier': arr[last].identifier,
+							'identifier': (arr[last].identifier != "" ? arr[last].identifier : 'trigger-' + last),
 							'element': arr[last].element,
 							'top': arr[last].top,
 							'height': arr[last].height
 						},
 						'controls': {
 							'prev': {
-								'identifier': prev.identifier,
+								'identifier': (prev.identifier != "" ? prev.identifier : 'trigger-' + prevI),
 								'element': prev.element,
 								'top': prev.top,
 								'height': prev.height
 							},
 							'current': {
-								'identifier': arr[i].identifier,
+								'identifier': (arr[i].identifier != "" ? arr[i].identifier : 'trigger-' + i),
 								'element': arr[i].element,
 								'top': arr[i].top,
 								'height': arr[i].height
 							},
 							'next': {
-								'identifier': next.identifier,
+								'identifier': (next.identifier != "" ? next.identifier : 'trigger-' + nextI),
 								'element': next.element,
 								'top': next.top,
 								'height': next.height
