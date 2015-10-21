@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TriggerScrolling jQuery plugin</title>
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		.-js-screen{
+			height: 100vh;
+			width: 100%;
+			display: block;	
+		}
+		
+		.-js-trigger-scrolling-active{
+			background-color: green !important;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="-js-screen" data-trigger-scrolling="screen1" style="background-color: #FFCC00;">Page 1</div>
+	<div class="-js-screen"  style="background-color: #DD4400;">Page 2</div>
+	<div class="-js-screen" data-trigger-scrolling="screen3" style="background-color: #FF0000;">Page 3</div>
+	<div class="-js-screen"  style="background-color: #F1C3C3;">Page 4</div>
+	<div class="-js-screen" data-trigger-scrolling="screen5" style="background-color: #F1F1;">Page 5</div>
+	
+	<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="jquery.triggerScrolling-1.0.0.js"></script>
+
+	<script>
+		// Instanciando objeto e definindo opções default
+		var trgScrolling = new triggerScrolling({
+            debug: true,
+            scroll: {
+                margin: {
+                    subtract: ($('.topo-site').outerHeight() + 1)
+                }
+            }
+        });
+		
+		// Inicializando com a tela em ready
+        $(document).ready(function() {
+        	trgScrolling.init();
+        });
+
+		// Colocado no scroll e executando
+		$(window).on('scroll', function(event) {
+            trgScrolling.init(function(obj) {
+                console.log(obj);
+            });
+        });
+
+	</script>
+</body>
+</html>
