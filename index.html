@@ -20,13 +20,41 @@
 </head>
 <body>
 
-	<div class="-js-screen" data-trigger-scrolling="screen1" style="background-color: #FFCC00;">Page 1</div>
-	<div class="-js-screen"  style="background-color: #DD4400;">Page 2</div>
-	<div class="-js-screen" data-trigger-scrolling="screen3" style="background-color: #FF0000;">Page 3</div>
-	<div class="-js-screen"  style="background-color: #F1C3C3;">Page 4</div>
-	<div class="-js-screen" data-trigger-scrolling="screen5" style="background-color: #F1F1;">Page 5</div>
+	<div class="-js-screen" data-trigger-scrolling="screen1" data-trigger-execute="fnNameMyFunction" style="background-color: #FFCC00;">Page 1</div>
+	<div class="-js-screen" style="background-color: #DD4400;">Page 2</div>
 	
-	<script type="text/javascript" src="jquery-1.11.3.js"></script>
-	<script type="text/javascript" src="jquery.triggerScrolling-1.0.0.js"></script>
+	<div class="-js-screen" data-trigger-scrolling="screen3" style="background-color: #FF0000;">Page 3</div>
+
+	<div class="-js-screen"  style="background-color: #F1C3C3;">Page 4</div>
+	<div class="-js-screen" data-trigger-scrolling="screen5" data-trigger-execute style="background-color: #F1F1;">Page 5</div>
+	
+	<script type="text/javascript" src="libs/dependencies/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="libs/dist/jquery.triggerScrolling-1.0.2.js"></script>
+	<script type="text/javascript" src="libs/dist/jquery.triggerScrolling-additional-methods-1.0.2.js"></script>
+
+	<script>
+		var trgScrolling = new triggerScrolling({
+            debug: true,
+            scroll: {
+                margin: {
+                    subtract: ($('.topo-site').outerHeight() + 1)
+                }
+            }
+        });
+		
+		// Starting plugin when the page is loaded
+        $(document).ready(function() {
+        	trgScrolling.init(function(objCallback) {
+                console.log(objCallback);
+            });
+        });
+
+		// Running the plugin with the page scroll
+		$(window).on('scroll', function(event) {
+            trgScrolling.init(function(objCallback) {
+                console.log(objCallback);
+            });
+        });
+	</script>
 </body>
 </html>

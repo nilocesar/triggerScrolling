@@ -1,0 +1,50 @@
+{
+	"name": "triggerscrolling",
+	"title": "jQuery TriggerScrolling Plugin",
+	"version": "1.0.2",
+	"description": "Client-side Detect the scroll moments in screen elements",
+	"homepage": "https://github.com/christianfortes/triggerScrolling",
+	"author": {
+		"name": "Christian Fortes",
+		"email": "giovanirushl@gmail.com",
+		"url": "http://christianfortes.com"
+	},
+	"plugin": {
+		"name": "jquery.triggerScrolling",
+		"additional": "jquery.triggerScrolling-additional-methods"
+	},
+	"license": "MIT",
+	"main": "libs/dist/jquery.triggerScrolling-1.0.2.min.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/christianfortes/triggerScrolling.git"
+	},
+	"keywords": [
+    "scroll",
+    "scrolling",
+    "trigger",
+    "execute",
+    "detect",
+    "elements",
+    "html",
+    "data-attributes",
+    "jquery",
+    "jquery-plugin",
+    "javascript",
+    "js"
+  ],
+	"bugs": {
+		"url": "https://github.com/christianfortes/triggerScrolling/issues"
+	},
+	"devDependencies": {
+		"grunt": "0.4.4",
+		"grunt-contrib-clean": "^0.6.0",
+		"grunt-contrib-concat": "0.3.0",
+		"grunt-contrib-jshint": "^0.10.0",
+		"grunt-contrib-uglify": "0.4.0",
+		"grunt-contrib-watch": "0.6.0"
+	}
+}
