@@ -1,0 +1,13 @@
+{
+	"name": "triggerscrolling",
+	"version": "1.0.2",
+	"homepage": "https://github.com/christianfortes/triggerscrolling",
+	"authors": [
+    "Christian Fortes"
+  ],
+	"description": "Documentação triggerscrolling",
+	"license": "MIT",
+	"dependencies": {
+		"jformvalidate": "latest"
+	}
+}

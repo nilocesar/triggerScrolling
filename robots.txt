@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: http://christianfortes.github.io/jformvalidate/sitemap.xml

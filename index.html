@@ -1,86 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="INDEX, FOLLOW">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>triggerScrolling.js - TriggerScrolling serves to trigger events to get pre certain elements in the HTML page.</title>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://christianfortes.github.io/triggerScrolling">
+  <meta property="og:site_name" content="triggerScrolling.js">
+  <meta property="og:title" content="triggerScrolling.js - TriggerScrolling serves to trigger events to get pre certain elements in the HTML page.">
+  <meta property="og:description" content="TriggerScrolling serves to trigger events to get pre certain elements in the HTML page.">
+  <meta property="og:image" content="https://christianfortes.github.io/triggerScrolling/images/fb-logo.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="123">
+  <meta property="og:image:height" content="103">
+  <meta property="og:type" content="website">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <link type="text/css" rel="stylesheet" href="css/monokai_sublime.css"/>
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
 
-    <title>TriggerScrolling Plugin by christianfortes</title>
   </head>
+  <body data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger>
+        <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <div>
+            <h1>triggerScrolling.js</h1>
+            <p style="width: 340px;">Event trigger on screen elements during scrolling</p>
+          </div>
+        </div>
+        <div class="link-top">
+          <a href="//github.com/christianfortes/triggerScrolling/archive/master.zip" onclick="_gaq.push(['_trackEvent', 'Biblioteca', 'Download', 'Download no topo']);">Download ZIP</a>
+        </div>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>TriggerScrolling Plugin</h1>
-        <h2>Trigger scrolling in section html/js</h2>
-        <a href="https://github.com/christianfortes/triggerScrolling" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+        <div style="clear:both;"></div>
+        <hr />
+        
+        <p>
+          TriggerScrolling serves to trigger events to get pre certain elements in the HTML page. Often when we are creating a site, we need to trigger events or modify something, when we get determines part of the site, thinking it was created triggerScrolling, it facilitates this interaction, monitoring the browser scroll, being possible to know in which part exactly site you are using callbacks available.
+        </p>
+	
+		<br />
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+    
+        <h3>Installation</h3>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <p>
+        	To install triggerScrolling in your project, you must download the package npm by using the following command in the terminal of your operating system.
+        </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+        <pre>
+            <code class="bash">
+npm install triggerscrolling
+            </code>
+        </pre>
+            <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>Implementation</h3>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <pre>
+            <code class="html">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+	&lt;head>
+		&lt;meta charset="UTF-8">
+		&lt;title>Title page&lt;/title>
+	&lt;/head>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+	&lt;body>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
+        &lt;!-- Body code... --&gt;
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+		&lt;script src="{{PATH}}/jquery.triggerScrolling-*.min.js">&lt;/script>
+        &lt;script>
+            // Initializing the library
+            var trgScrolling = new triggerScrolling();
+            
+            // Starting plugin when the page is loaded
+            $(document).ready(function() {
+                trgScrolling.init(function(objCallback) {
+                    console.log(objCallback);
+                });
+            });
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            // Running the plugin with the page scroll
+            $(window).on('scroll', function(event) {
+                trgScrolling.init(function(objCallback) {
+                    console.log(objCallback);
+                });
+            });
+        &lt;/script>
+	&lt;/body>
+&lt;/html>
+            </code>
+        </pre>
+        <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>    
+        <h3>CSS classes used by the plugin</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <pre>
+            <code class="css">
+.-js-trigger-scrolling-active{
+    background-color: green;
+}
+            </code>
+        </pre>
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>Configuration Parameters</h3>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+        <pre>
+            <code class="js">
+// Default settings
+var trgScrolling = new triggerScrolling({
+    debug: true,
+    trigger: {
+        className: '-js-trigger-scrolling-active',
+    },
+    scroll: {
+        margin: {
+            subtract: 0,
+            sum: 0
+        }
+    }
+});
+            </code>
+        </pre>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-        </section>
+        <br />
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>Forms of data attributes</h3>
 
-        <aside id="sidebar">
-          <a href="https://github.com/christianfortes/triggerScrolling/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/christianfortes/triggerScrolling/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+        <pre>
+            <code class="html">
+&lt;div data-trigger-scrolling="optional_name">Element 1&lt;/div>
+&lt;div data-trigger-scrolling="optional_name">Element 2&lt;/div>
+&lt;div data-trigger-scrolling="optional_name">Element 3&lt;/div>
+            </code>
+        </pre>
 
-          <p class="repo-owner"><a href="https://github.com/christianfortes/triggerScrolling"></a> is maintained by <a href="https://github.com/christianfortes">christianfortes</a>.</p>
+        <br />
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>Forms data attributes - Running functions</h3>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+        <pre>
+            <code class="html">
+&lt;div data-trigger-scrolling="optional_name" data-trigger-execute="fnNameMyFunction">Element&lt;/div>
+            </code>
+        </pre>
+
+        <br />
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>Creating the implementation tasks</h3>
+
+        <p>
+            Call the following file in your html:
+        </p>
+
+        <pre>
+            <code class="html">
+&lt;script src="{{PATH}}/jquery.triggerScrolling-*.min.js">&lt;/script>
+&lt;script type="text/javascript" src="{{PATH}}/jquery.triggerScrolling-additional-methods-*.js">&lt;/script>
+            </code>
+        </pre>
+
+        <p>
+            Creating functions
+        </p>
+
+        <pre>
+            <code class="js">
+$(function () {
+    'use strict';
+
+    // Function alias(trgScrolling) is set to an instance of the plugin
+    trgScrolling.addMethod('fnNameMyFunction', function (objCallback) {
+        console.log(objCallback);
+    });
+    
+    // Definitions
+    trgScrolling.addMethod('function_name', function_callback);
+});
+            </code>
+        </pre>
+            <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>Callback object</h3>
+        
+        <p>
+            The returned object in the callback will come with the following information:
+        </p>
+        
+        <pre>
+            <code class="js">
+{
+    'page': {
+        'first': {
+            'identifier': Name alias the element,
+            'element': Object javascript the element,
+            'top': Position of the scroll in which this element,
+            'height': Height size of first element defined with the attribute
+        },
+        'last': {
+            'identifier': Name alias the element,
+            'element': Object javascript the element,
+            'top': Position of the scroll in which this element,
+            'height': Size height of last element set with the attribute
+        },
+        'bottom': If the scroll arrived at the bottom,
+        'top': If the scroll arrived at the top of the page,
+    },
+    'controls': {
+        'prev': {
+            // Who is the previous element
+            'identifier': Name alias the element,
+            'element': Object javascript the element,
+            'top': Position of the scroll in which this element,
+            'height': Height size of the element defined with attribute
+        },
+        'current': {
+            // Current element
+            'identifier': Name alias the element,
+            'element': Object javascript the element,
+            'top': Position of the scroll in which this element,
+            'height': Height size of the element defined with attribute
+        },
+        'next': {
+            // Who is the next element
+            'identifier': Name alias the element,
+            'element': Object javascript the element,
+            'top': Position of the scroll in which this element,
+            'height': Height size of the element defined with attribute
+        },
+    }
+};
+            </code>
+        </pre>
+        <br />
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        
+        <h3>See the demonstration of implementation</h3>
+
+        <p>
+            <a href="demo/index.html" target="_BLANK" onclick="_gaq.push(['_trackEvent', 'Biblioteca', 'Demonstração', 'Clique em demonstração do plugin']);">Click here</a> and see the plug-in operation.
+        </p>
+        
+        <br />
+        
+    <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+        <h3>If you like, share.</h3>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_native_toolbox"></div>
+        
+        <br />
+
+        <hr />
+        <div id="title">
+          <span class="credits left">Project maintained by <a href="https://github.com/christianfortes" target="_blank" onclick="_gaq.push(['_trackEvent', 'Bibliografia', 'LinkPessoal', 'Link da pagina pessoal do github']);">christianfortes</a> | <a href="https://github.com/christianfortes/triggerScroll">Github triggerScroll.js</a></span>
+          <span class="credits right">Hosted on GitHub Pages</span>
+        </div>
+      </section>
+
     </div>
+        <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
+    <script src="demo/libs/dependencies/jquery-1.11.3.js"></script>
+    <script src="js/analitycs.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5345944501f92b83" async="async"></script>
+    <script>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-69240566-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        // Configuração highlight.js
+        hljs.configure({tabReplace: '    '}); // 4 spaces
+        hljs.initHighlightingOnLoad();
 
+        // Configuração addthis.js
+        var addthis_config = addthis_config||{};
+        addthis_config.data_track_addressbar = false;
+        var addthis_share = {
+           url: "christianfortes.github.io/triggerScrolling"
+        }
+
+    </script>
   </body>
-</html>
+  </html>
