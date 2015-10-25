@@ -263,9 +263,24 @@ $(function () {
         
     <span style="opacity: 0;">data-attributes, detect, elements, execute, html, javascript, jquery, jquery-plugin, js, scroll, scrolling, trigger</span>
         <h3>If you like, share.</h3>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <div class="addthis_native_toolbox"></div>
         
+        
+            <div class="fb-share-button" data-href="http://christianfortes.github.io/triggerScrolling/" data-layout="button_count"></div>
+
+        <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://christianfortes.github.io/triggerScrolling/" data-count-url="https://dev.twitter.com/web/tweet-button" data-text="triggerScrolling.js - Serves to trigger events to get pre certain elements in the HTML page.">Tweet Share</a>
+
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+
         <br />
 
         <hr />
@@ -280,20 +295,5 @@ $(function () {
     <script src="demo/libs/dependencies/jquery-1.11.3.js"></script>
     <script src="js/analitycs.js"></script>
     <script src="js/highlight.min.js"></script>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5345944501f92b83" async="async"></script>
-    <script>
-
-        // Configuração highlight.js
-        hljs.configure({tabReplace: '    '}); // 4 spaces
-        hljs.initHighlightingOnLoad();
-
-        // Configuração addthis.js
-        var addthis_config = addthis_config||{};
-        addthis_config.data_track_addressbar = false;
-        var addthis_share = {
-           url: "//christianfortes.github.io/triggerScrolling/"
-        }
-
-    </script>
   </body>
   </html>
