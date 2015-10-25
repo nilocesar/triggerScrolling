@@ -1,5 +1,5 @@
 /*
- * jQuery TriggerScrolling Plugin v1.0.2
+ * jQuery TriggerScrolling Plugin v1.0.4
  *
  * https://github.com/christianfortes/triggerScrolling
  *
