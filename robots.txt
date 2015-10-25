@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: 
 
-Sitemap: http://christianfortes.github.io/jformvalidate/sitemap.xml
+Sitemap: http://christianfortes.github.io/triggerscrolling/sitemap.xml

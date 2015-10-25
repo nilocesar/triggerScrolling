@@ -6,8 +6,5 @@
     "Christian Fortes"
   ],
 	"description": "Documentação triggerscrolling",
-	"license": "MIT",
-	"dependencies": {
-		"jformvalidate": "latest"
-	}
+	"license": "MIT"
 }
