@@ -1,7 +1,7 @@
 {
 	"name": "triggerscrolling",
 	"title": "jQuery TriggerScrolling Plugin",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Client-side Detect the scroll moments in screen elements",
 	"homepage": "https://github.com/christianfortes/triggerScrolling",
 	"author": {
@@ -46,5 +46,8 @@
 		"grunt-contrib-jshint": "^0.10.0",
 		"grunt-contrib-uglify": "0.4.0",
 		"grunt-contrib-watch": "0.6.0"
+	},
+	"dependencies": {
+		"jquery": "^2.1.4"
 	}
 }
